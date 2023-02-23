@@ -1,0 +1,204 @@
+@import "../../_variables.scss";
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 40px;
+    margin: 40px 80px;
+  }
+}
+.formes_container,
+.machines_container,
+.serialisation_container {
+  background-color: #fff;
+  margin: 5rem;
+  padding: 5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 1rem $vert-fonce-trans;
+
+  h3 {
+    font-size: 3.5rem;
+    font-weight: 200;
+    color: $vert-fonce;
+  }
+
+  .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+
+    .card {
+      height: 20rem;
+      width: 20rem;
+      margin: 3rem;
+      display: flex;
+      flex-direction: column;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 1rem $vert-fonce-trans;
+      position: relative;
+      overflow: hidden;
+
+      .texte {
+        background-color: $sombre-trans;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(100%);
+        p {
+          text-transform: uppercase;
+          color: $clair;
+          width: 90%;
+          font-weight: bold;
+        }
+      }
+
+      &:hover .texte {
+        transform: translate(0);
+      }
+      &_pvcalu {
+        background-image: url(../../assets/polymerealu.jpg);
+      }
+      &_alualu {
+        background-image: url(../../assets/alualu.jpg);
+      }
+      &_pot {
+        background-image: url(../../assets/pot.jpg);
+      }
+      &_tube {
+        background-image: url(../../assets/tube.jpg);
+      }
+      &_etui {
+        background-image: url(../../assets/etui.jpg);
+      }
+    }
+  }
+
+  .machines_content {
+    .contenu {
+      display: flex;
+      margin-top: 3rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .texte {
+        width: 60%;
+        text-align: justify;
+        display: flex;
+        &_content {
+          padding: 2rem;
+          width: 40%;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          box-shadow: 0 0 1rem $vert-fonce-trans;
+          margin: 2rem;
+          h4 {
+            text-align: center;
+            padding: 1rem 0;
+          }
+          li {
+            text-align: center;
+          }
+        }
+      }
+
+      .sliders {
+        flex-shrink: 0;
+        width: 50rem;
+        height: 30rem;
+        border-radius: 20px;
+        box-shadow: 0 0 1rem $vert-fonce-trans;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: hidden;
+        .img {
+          height: 30rem;
+          width: 50rem;
+          flex-shrink: 0;
+          animation: glisse 10s infinite;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+
+          &_1 {
+            background-image: url(../../assets/slider3.jpg);
+          }
+          &_2 {
+            background-image: url(../../assets/slider4.jpg);
+          }
+          &_3 {
+            background-image: url(../../assets/slider5.jpg);
+          }
+        }
+      }
+    }
+  }
+
+  .serialisation_content {
+    .flex_container {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-top: 2rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .datamatrix {
+      width: 20rem;
+      height: 20rem;
+      margin: 0 5rem;
+
+      flex-shrink: 0;
+      background-image: url(../../assets/barcode.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .texte {
+      p {
+        margin: 1rem 0;
+        text-align: justify;
+        line-height: 2.6rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+  26% {
+    transform: translateX(0rem);
+  }
+  33% {
+    transform: translateX(-50rem);
+  }
+  59% {
+    transform: translateX(-50rem);
+  }
+  66% {
+    transform: translateX(-100rem);
+  }
+  92% {
+    transform: translateX(-100rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}

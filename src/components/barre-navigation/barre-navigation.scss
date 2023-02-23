@@ -1,0 +1,155 @@
+@import "../../_variables.scss";
+
+nav {
+  height: 12rem;
+  background: $vert-clair;
+  width: 100%;
+  z-index: 10;
+}
+.nav-container {
+  display: flex;
+  padding: 0 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, $vert-fonce, $vert-fonce-trans);
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 10%, 100% 1%, 100% 100%, 0 100%);
+}
+.logo-container {
+  width: clamp(200px, 20vw, 15%);
+  min-width: 200px;
+  padding: 2rem;
+}
+img {
+  width: 70%;
+}
+.links-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.link-item a {
+  position: relative;
+  color: $clair;
+  text-transform: uppercase;
+}
+
+.link-item a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $clair;
+  opacity: 0.5;
+  transform: scaleX(0.2);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+.link-item a:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+.burger-menu-btn-container {
+  display: none;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid $clair;
+  border-radius: 5px;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu-btn {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  background: $clair;
+  border-radius: 3px;
+  height: 2px;
+}
+.burger-menu-btn::after,
+.burger-menu-btn::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  left: 20%;
+  background: $clair;
+  transition: all 0.3s ease;
+}
+.burger-menu-btn.active {
+  background: transparent;
+}
+.burger-menu-btn.active::after {
+  transform: rotate(225deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.burger-menu-btn.active::before {
+  transform: rotate(-225deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.burger-menu-btn::after {
+  top: 8px;
+}
+.burger-menu-btn::before {
+  top: -8px;
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, $vert-fonce, $vert-fonce-opaq);
+  backdrop-filter: blur(5px);
+  display: flex;
+  z-index: 8;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
+}
+
+.links-container-modal {
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $clair;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-item-modal {
+  width: 100vw;
+  text-align: center;
+}
+.link-item-modal a {
+  color: $clair;
+
+  width: 100%;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .links-container {
+    display: none;
+  }
+  .burger-menu-btn-container {
+    display: flex;
+  }
+  .modal.active {
+    transform: translateY(0%);
+  }
+}

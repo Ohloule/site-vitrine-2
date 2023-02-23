@@ -1,0 +1,74 @@
+@import "../../_variables.scss";
+.contact {
+  padding: 0 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  background-color: $clair;
+
+  h1 {
+    font-size: 25px;
+    border-bottom: 4px solid $vert-clair;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  .formulaire {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.btn_envoyer {
+  width: 50%;
+  max-width: 300px;
+  min-width: 300px;
+  border: none;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background-color: $vert-clair;
+  color: $clair;
+  cursor: pointer;
+  &:hover {
+    background-color: $clair;
+    border: 1px solid $vert-clair;
+    color: $sombre;
+    box-shadow: 0px 5px 5px $vert-fonce-trans;
+    font-weight: bold;
+  }
+}
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  label {
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+  input,
+  textarea {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    min-height: 40px;
+    padding-left: 30px;
+  }
+
+  textarea {
+    padding-top: 10px;
+    resize: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    padding: 0 20px 20px 20px;
+    .formulaire {
+      width: 100%;
+    }
+  }
+}

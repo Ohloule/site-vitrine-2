@@ -1,30 +1,59 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="app">
+    <loader-component class="loader"></loader-component>
+    <barre-navigation id="barre-navigation"></barre-navigation>
+    <div class="router-vue"><router-view /></div>
+    <barre-footer></barre-footer>
+  </div>
 </template>
 
+<script>
+import barNav from "./components/barre-navigation/barre-navigation.vue";
+import footBar from "./components/barre-footer/barre-footer.vue";
+import loaderComponent from "./components/loader-component/loader-component.vue";
+
+export default {
+  name: "app",
+  mounted() {
+    const loader = document.querySelector(".loader");
+    window.addEventListener("load", () => {
+      loader.style.display = "none";
+    });
+  },
+  components: {
+    "barre-navigation": barNav,
+    "barre-footer": footBar,
+    "loader-component": loaderComponent,
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "./_variables.scss";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: $font-normal;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //height: 100vh;
+  background-color: $clair;
+}
+h2 {
+  font-family: "Noto Serif", serif;
+  font-weight: 800;
+}
+.router-vue {
+  background-color: $clair;
 }
 </style>

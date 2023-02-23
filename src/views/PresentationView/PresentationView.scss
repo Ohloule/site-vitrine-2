@@ -1,0 +1,126 @@
+@import "../../_variables.scss";
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: transparent;
+  background: linear-gradient(
+    90deg,
+    $vert-fonce 0%,
+    $vert-clair 50%,
+    $vert-fonce 100%
+  );
+  background-clip: text;
+  margin: 2rem;
+}
+
+.container {
+  background: $blanc;
+  margin: 2rem auto;
+  max-width: 160rem;
+  width: 95%;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //align-items: flex-start;
+  padding: 3rem;
+  gap: 2rem;
+}
+img {
+  border-radius: 3rem;
+  box-shadow: 0 0 1rem $sombre;
+  margin-top: 2rem;
+  width: clamp(20rem, 50vw, 70rem);
+}
+.texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  text-align: justify;
+  flex-shrink: 1;
+  padding: 3rem;
+}
+.texte h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.texte ul li {
+  list-style: circle;
+  margin-left: 5rem;
+}
+.card-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid $vert-fonce;
+  padding: 0rem 4rem 2rem;
+  width: 400px;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+.card p {
+  margin: 0.5rem 0;
+}
+.card a {
+  margin: 1.5rem 0 1rem;
+  color: $sombre;
+  position: relative;
+  font-weight: bold;
+}
+.card a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $vert-fonce;
+  opacity: 0.5;
+  transform: scaleX(0.2);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+.card a:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .texte h2 {
+    font-size: 1.6rem;
+  }
+  .texte p,
+  .texte ul li {
+    font-size: 1.4rem;
+  }
+  .texte {
+    gap: 1rem;
+  }
+  .container {
+    padding: 0;
+    gap: 0;
+  }
+  img {
+    width: 90%;
+  }
+}

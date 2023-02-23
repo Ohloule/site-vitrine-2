@@ -1,0 +1,89 @@
+@import "../../_variables.scss";
+
+.home {
+  min-height: calc(100vh - 30rem);
+  background-image: url(../../assets/tablet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+h2 {
+  font-weight: 200;
+  padding: 20px;
+}
+.info-container {
+  position: absolute;
+  width: clamp(40rem, 90vw, 60rem);
+  background: #f1f1f1e5;
+  top: 5rem;
+  left: 70%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4rem;
+  gap: 2rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, $vert-fonce, $sombre);
+  background-clip: text;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+p {
+  text-align: justify;
+}
+
+.info-container a {
+  align-self: flex-start;
+  text-decoration: none;
+  color: $sombre;
+  position: relative;
+  font-weight: bold;
+}
+
+.info-container a:hover::after {
+  transform: scaleX(1);
+}
+.info-container a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $sombre;
+  transform: scaleX(0.2);
+  transition: all 0.3s ease-in-out;
+  transform-origin: left;
+}
+
+@media (max-width: 900px) {
+  .info-container {
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 400px) {
+  .info-container {
+    top: 1rem;
+  }
+  .info-container p,
+  .info-container a {
+    font-size: 14px;
+  }
+  .info-container h1 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../_variables.scss";
+.barre-footer {
+  width: 100%;
+  min-height: 18rem;
+  background-color: $sombre;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 3000;
+}
+
+.coordonnees > div {
+  color: $clair;
+  text-align: center;
+}
+.nom {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+.tel {
+  padding-bottom: 0.5rem;
+  width: 100%;
+  border-bottom: 0.2rem solid $clair;
+}
+.type {
+  padding-top: 0.6rem;
+}
+.logo {
+  background-image: url(../../assets/logo_ajc_blanc.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-width: 12rem;
+  height: 12rem;
+}
+
+@media screen and (max-width: 666px) {
+  .logo {
+    display: none;
+  }
+  .barre-footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .coordonnees {
+    margin: 2.5rem 0;
+  }
+}

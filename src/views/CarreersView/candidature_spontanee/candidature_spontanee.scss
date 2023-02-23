@@ -1,0 +1,132 @@
+@import "../../../_variables.scss";
+
+.contact {
+  padding: 0 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $clair;
+  margin-top: 4rem;
+
+  h1 {
+    font-size: 25px;
+    border-bottom: 4px solid $vert-clair;
+    margin-bottom: 20px;
+    width: 80%;
+
+    span {
+      font-size: 25px;
+    }
+  }
+  .formulaire {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.btn_envoyer {
+  width: 50%;
+  max-width: 300px;
+  min-width: 300px;
+  border: none;
+  margin-top: 20px;
+  height: 50px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background-color: $vert-clair;
+  color: $clair;
+  cursor: pointer;
+  &:hover {
+    background-color: $clair;
+    border: 1px solid $vert-clair;
+    color: $sombre;
+    box-shadow: 0px 5px 5px $sombre-trans;
+    font-weight: bold;
+  }
+}
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  label {
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+  input,
+  textarea {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    min-height: 40px;
+    padding-left: 30px;
+  }
+
+  textarea {
+    padding-top: 10px;
+    resize: none;
+  }
+}
+
+///////////////////////////////////
+.importer_document {
+  display: flex;
+  margin-top: 3rem;
+  width: 80%;
+  justify-content: space-between;
+}
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-bottom: 2rem;
+  font-size: 15px;
+}
+
+.file-upload__input {
+  display: none;
+}
+
+.file-upload__button {
+  -webkit-appearance: none;
+  border: 1px solid $vert-fonce;
+  border-radius: 4px;
+  outline: none;
+  padding: 0.5em 0.8em;
+  margin-right: 15px;
+  width: 300px;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: $vert-fonce-trans;
+  }
+
+  font-size: 1em;
+
+  cursor: pointer;
+}
+
+.file-upload__label {
+  max-width: 250px;
+  font-size: 0.95em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+///////////////////////////////////
+
+@media screen and (max-width: 450px) {
+  .contact {
+    padding: 0 20px 20px 20px;
+    .formulaire {
+      width: 100%;
+    }
+    h1 {
+      span {
+        display: none;
+      }
+    }
+  }
+}

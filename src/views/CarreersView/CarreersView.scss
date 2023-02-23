@@ -1,0 +1,200 @@
+@import "../../_variables.scss";
+
+.carreers-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.offre_container {
+  border-radius: 1.3rem;
+  min-width: 60%;
+  max-width: 60%;
+  margin: 2rem 0;
+  padding: 4rem;
+  box-shadow: 0 0 2rem $vert-fonce-trans;
+  &_entete {
+    min-height: 15rem;
+    background-color: $clair;
+    border: 3px solid $vert-fonce;
+  }
+
+  &_proposition {
+    background-color: $clair;
+    min-height: 20rem;
+  }
+  &:last-child {
+    margin-bottom: 80px;
+  }
+}
+
+.offre_content {
+  width: 90%;
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $vert-fonce;
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 2.1rem;
+    font-weight: 300;
+    transform: scaleY(1.1);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  p {
+    text-align: justify;
+  }
+  .candidature_spontanee {
+    padding: 1.4rem;
+    background-color: $sombre;
+    color: $clair;
+    display: inline-block;
+    border-radius: 6px;
+    transition: all 0.2s;
+
+    &:hover {
+      opacity: 0.9;
+      box-shadow: 0 0 0.8rem $sombre;
+    }
+  }
+
+  .boutons {
+    display: flex;
+    margin-top: 3rem;
+
+    & > * {
+      padding: 0.8rem 2.4rem;
+      border-radius: 0.6rem;
+      color: #fff;
+      &:hover {
+        opacity: 0.8;
+        box-shadow: 0 0 0.4rem $vert-fonce-trans;
+        cursor: pointer;
+      }
+    }
+    .voir_offre {
+      margin-right: 1.5rem;
+      background-color: $sombre;
+    }
+    .postuler {
+      background-color: $vert-fonce;
+    }
+  }
+}
+
+.popup {
+  position: fixed;
+  z-index: 10000;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $sombre-trans;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .container {
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    background-color: $clair;
+    margin-top: 10rem;
+    height: 80%;
+    border-radius: 20px;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .ligne {
+      // position: absolute;
+      // bottom: 0;
+      // left: 0;
+      display: block;
+      width: 100%;
+      height: 80px;
+
+      background-image: url("../../assets/simple.svg");
+      background-repeat: no-repeat;
+    }
+    .content {
+      padding: 10rem 5rem 0 5rem;
+      width: 90%;
+      max-height: 100%;
+      .fermeture {
+        position: absolute;
+        top: 3rem;
+        right: 6rem;
+        font-size: 4rem;
+        cursor: pointer;
+      }
+
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        margin-bottom: 2.5rem;
+        line-height: 3rem;
+        text-align: justify;
+      }
+      .postuler_container {
+        display: flex;
+        justify-content: center;
+      }
+      .postuler {
+        background-color: $vert-fonce;
+        border-radius: 5px;
+        color: $clair;
+        max-width: 400px;
+        width: 80%;
+        margin: 0 auto 6rem auto;
+        text-align: center;
+        padding: 1rem 5rem;
+        transition: all 0.2s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .offre_container {
+    min-width: 290px;
+    max-width: initial;
+    width: 100%;
+    &_proposition {
+      background-image: none !important;
+      background-color: $clair;
+    }
+  }
+
+  .popup {
+    .container {
+      height: 95%;
+      width: 90%;
+      margin: 2rem;
+
+      .content {
+        width: 100%;
+
+        h2 {
+          max-width: 250px;
+        }
+        padding: 4rem 1rem;
+      }
+    }
+  }
+}

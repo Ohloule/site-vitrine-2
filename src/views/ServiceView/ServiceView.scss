@@ -1,0 +1,292 @@
+@import "../../_variables.scss";
+
+h1.pages {
+  padding: 3rem 8rem;
+  background: linear-gradient(
+    90deg,
+    $vert-fonce 0%,
+    $vert-clair 50%,
+    $vert-fonce 100%
+  );
+  text-align: center;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.service,
+.production {
+  height: 100%;
+  background-color: $clair;
+  z-index: auto;
+  margin-top: 4rem;
+}
+
+.container-uparr {
+  position: fixed;
+  z-index: 1000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: $vert-clair-trans;
+  color: $blanc;
+  bottom: 5rem;
+  right: 5rem;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+
+  .uparr {
+    color: $clair;
+    margin-bottom: 2px;
+    font-size: calc(1.2 * $font-normal);
+  }
+  &:hover {
+    background-color: rgba(238, 238, 238, 0.68);
+    transform: scale(1.2);
+    border: solid 1px $vert-clair;
+
+    & .uparr {
+      color: $sombre;
+      font-weight: bold;
+    }
+  }
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card {
+  position: relative;
+  height: 480px;
+  width: 300px;
+  border: 5px $vert-fonce solid;
+  border-radius: 30px;
+  background-color: $clair;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  ul {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    width: 65%;
+    transform: translateX(-50%);
+    background-color: $clair;
+    border-radius: 6px;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+
+    li {
+      width: 100%;
+      margin: 8px auto;
+      padding: 4px;
+      color: $sombre;
+      position: relative;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 115%;
+        left: 25%;
+        width: 50%;
+        background-image: linear-gradient(
+          to right,
+          black 33%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: bottom;
+        background-size: 15px 5px;
+        background-repeat: repeat-x;
+        height: 1px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .ensavoir {
+    position: relative;
+    margin-top: 420px;
+    color: $sombre;
+  }
+  .ensavoir::before {
+    content: "";
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    left: 25%;
+
+    top: -9px;
+    background-color: $vert-fonce;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    transform: scaleX(0);
+  }
+  &:hover .ensavoir::before {
+    //width: 150px;
+    transform: scaleX(1);
+    z-index: -1;
+  }
+  &:hover .ensavoir {
+    z-index: 100;
+    font-weight: bold;
+    color: $clair;
+  }
+
+  &:hover .image {
+    height: 490px;
+    width: 305px;
+    border-radius: 0;
+  }
+
+  &:hover ul {
+    bottom: 130px;
+  }
+  .image {
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 20% 20%;
+    &_assurance {
+      background-image: linear-gradient(
+          $vert-clair-trans 60%,
+          $sombre-trans 90%
+        ),
+        url(../../assets/assurance.jpg);
+    }
+    &_analyse {
+      background-image: linear-gradient(
+          $vert-clair-trans 60%,
+          $sombre-trans 90%
+        ),
+        url(../../assets/analyse.jpg);
+    }
+    &_developpement {
+      background-image: linear-gradient(
+          $vert-clair-trans 60%,
+          $sombre-trans 90%
+        ),
+        url(../../assets/dragee.jpg);
+    }
+    &_capacite {
+      background-image: linear-gradient(
+          $vert-clair-trans 60%,
+          $sombre-trans 90%
+        ),
+        url(../../assets/capacite.jpg);
+    }
+    &_fabrication {
+      background-image: linear-gradient(
+          $vert-clair-trans 60%,
+          $sombre-trans 90%
+        ),
+        url(../../assets/tabletcolor.jpg);
+    }
+    &_conditionnement {
+      background-image: linear-gradient(
+          $vert-clair-trans 60%,
+          $sombre-trans 90%
+        ),
+        url(../../assets/dragee.jpg);
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 8px;
+    height: 65px;
+    width: 88%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    z-index: 2;
+    text-transform: uppercase;
+    color: $vert-fonce;
+    background-color: rgba($clair, $alpha: 0.8);
+    border-radius: 6px;
+  }
+}
+
+.transition_ligne {
+  overflow: visible;
+  background-image: url(../../assets/simple.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 150px;
+  margin-top: 50px;
+}
+
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+//////////////////////////////////////////////
+
+@media (max-width: 500px) {
+  h1.pages {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .card {
+    margin-top: 20px;
+  }
+  h1.pages {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  .sous-parties {
+    position: relative;
+    .sp {
+      h2 {
+        width: 400px;
+        font-size: 32px;
+        padding: 20px 0px;
+      }
+      .content_image {
+        position: absolute;
+        z-index: -1;
+      }
+      .ensemble_production {
+        .container {
+          .content_texte {
+            width: 100%;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .uparr {
+    display: none;
+  }
+}

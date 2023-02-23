@@ -1,0 +1,156 @@
+@import "../../_variables.scss";
+
+.production {
+  padding: 40px;
+  height: 100%;
+  background-color: $clair;
+  z-index: auto;
+}
+.container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.card {
+  position: relative;
+  height: 480px;
+  width: 300px;
+  border-radius: 30px;
+
+  background-color: $clair;
+  text-align: center;
+  border: 5px $vert-fonce solid;
+  overflow: hidden;
+
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 10px #06332249;
+  }
+
+  ul {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    width: 65%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    z-index: 2;
+    transition: all 0.4s;
+    color: $sombre;
+
+    li {
+      width: 100%;
+      margin: 8px auto;
+      padding: 4px;
+      position: relative;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 115%;
+        left: 25%;
+        width: 50%;
+        background-image: linear-gradient(
+          to right,
+          black 33%,
+          rgba(255, 255, 255, 0) 0%
+        );
+        background-position: bottom;
+        background-size: 15px 5px;
+        background-repeat: repeat-x;
+        height: 1px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .ensavoir {
+    position: relative;
+    margin-top: 420px;
+    color: $sombre;
+  }
+  .ensavoir::before {
+    content: "";
+    width: 0%;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -9px;
+    background-color: $vert-fonce;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  &:hover .ensavoir::before {
+    width: 150px;
+    z-index: -1;
+  }
+  &:hover .ensavoir {
+    z-index: 100;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &:hover .image {
+    height: 600px;
+  }
+
+  &:hover ul {
+    bottom: 150px;
+  }
+  .image {
+    transition: all 0.4s;
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &_capacite {
+      background-image: linear-gradient($vert-clair-trans, $sombre-trans),
+        url(../../assets/capacite.jpg);
+
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    }
+    &_fabrication {
+      background-image: linear-gradient($vert-clair-trans, $sombre-trans),
+        url(../../assets/tabletcolor.jpg);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+    &_conditionnement {
+      background-image: linear-gradient($vert-clair-trans, $sombre-trans),
+        url(../../assets/dragee.jpg);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 8px;
+    height: 65px;
+    width: 88%;
+    font-size: 18px;
+    z-index: 2;
+    text-transform: uppercase;
+    color: $vert-fonce;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    margin-top: 20px;
+  }
+}
