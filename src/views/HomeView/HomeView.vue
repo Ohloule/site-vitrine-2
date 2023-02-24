@@ -12,7 +12,7 @@
         dans les domaines pharmaceutique, homéopathique, cosmétique et des
         compléments alimentaires.
       </p>
-      <router-link to="/presentation"><span class="lien">Découvrir AJC Pharma &rarr;</span></router-link>
+      <router-link to="/presentation" class="lilien"><span class="lien">Découvrir AJC Pharma &rarr;</span></router-link>
     </div>
   </div>
 </template>

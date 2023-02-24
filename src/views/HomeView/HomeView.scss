@@ -43,13 +43,16 @@ h1 {
 p {
   text-align: justify;
 }
-
+.lilien{
+  align-self: flex-start;
+}
 .info-container .lien {
   align-self: flex-start;
   text-decoration: none;
   color: $sombre;
   position: relative;
   font-weight: bold;
+  
 }
 
 .info-container .lien:hover::after {
