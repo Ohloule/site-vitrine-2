@@ -171,6 +171,10 @@
 }
 
 @media (max-width: 700px) {
+  .container-uparr {
+    display: none;
+  }
+
   .offre_container {
     min-width: 290px;
     max-width: initial;
