@@ -50,18 +50,53 @@
         <h2>Les capacités de productions</h2>
         <p>1,3 milliard de comprimés</p>
         <p>285 millions de gélules</p>
-        <p>60 tonnes de dragées</p>
-        <a href="/production">La production AJC &rarr;</a>
+        <p>160 tonnes de comprimés pelliculés</p>
+        <p>80 tonnes de dragées</p>
+        <router-link to="/production"><span class="lien">La production AJC &rarr;</span></router-link>
       </div>
       <div class="card">
         <h2>Les domaines d'expertise</h2>
-        <p>L''assurance qualité'</p>
+        <p>L''assurance qualité</p>
         <p>Le laboratoire d'analyse</p>
         <p>Le développement industriel</p>
-        <a href="/production">Les services AJC &rarr;</a>
+        <p>La réactivité et la flexibilité</p>
+        <router-link to="/production"><span class="lien">Les services AJC &rarr;</span> </router-link>
       </div>
     </div>
-  </div>
+    </div>
+    <section class="container container_adresse">
+      <!-- <div class="content content_adresse"> -->
+        <div class="texte">
+          <h2>Nous trouver</h2>
+          <h3>Notre site de fabrication</h3>
+          <p>
+            Le laboratoire AJC Pharma se situe au coeur de la région
+            Charentaise, dans le bassin d'Angoulême, à Chateauneuf sur Charente.
+          </p>
+          <p>
+            La situation géographique, au coeur de l'axe Paris-Bordeaux, nous
+            permet une flexibilité pour l'approvisionnement et la livraison des
+            produits.
+          </p>
+
+          <h3>Notre siège social</h3>
+          <p>
+            Le siège social est basé à Paris dans le 17ème arrondissement, 16
+            rue Brey.
+          </p>
+        <router-link  to="/contact"><span class="lien">Nous contacter &rarr;</span> </router-link>
+        </div>
+        <div class="carte">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5747.361498724798!2d-0.06659685542718519!3d45.5931046456202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48007e1e7e08ad7f%3A0x5263bcf33b6cb1a8!2sAJC%20PHARMA!5e0!3m2!1sfr!2sfr!4v1649940502612!5m2!1sfr!2sfr"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      <!-- </div> -->
+    </section>
+  
 
   <!-- <div>
     <h1 class="pages">Découvrir le <br/> laboratoire AJC Pharma</h1>
