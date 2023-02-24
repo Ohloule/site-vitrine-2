@@ -12,11 +12,11 @@
                 <p>Blister Polymère sur Aluminium</p>
               </div>
             </div>
-            <div class="card card_alualu">
+            <!-- <div class="card card_alualu">
               <div class="texte">
                 <p>Blister Aluminium sur Aluminium</p>
               </div>
-            </div>
+            </div> -->
             <div class="card card_pot">
               <div class="texte">
                 <p>Pot et poudreurs</p>
