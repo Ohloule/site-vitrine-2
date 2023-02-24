@@ -1,5 +1,5 @@
 <template>
-<h2>
+      <h2>
         Le développement industriel
       </h2>
       <!--   /////////////////La granulation /////////////////////////// -->
@@ -12,7 +12,7 @@
           </div>
 
           <div class="content content_texte">
-            <h3>Analyses : précision et expertise</h3>
+            <h3>Vous accompagner à chaque changement</h3>
             <p>
               Le laboratoire AJC Pharma, fort de sa longue expérience, connait parfaitement son équipement industriel. Ses dimensions à taille moyenne permettent un grande flexibilité et réactivité afin d'assurer au mieux le passage à l'industrialisation.
             </p>
