@@ -103,12 +103,11 @@ img {
 }
 
 .container_adresse{
-  background: #ddd;
-  width: 80%;
-  margin: 3rem auto;
-  padding: 1rem;
-  padding-bottom: 5rem;
-  border-radius: 10px;
+  
+  // margin: 3rem auto;
+  // padding: 1rem;
+  // padding-bottom: 5rem;
+  // border-radius: 10px;
 
 
 }
@@ -127,14 +126,19 @@ iframe{
  border: none;
  border-radius: 10px;
 }
+.liens{
+  margin-bottom: 2rem;
+}
 .lien{
   
   margin-left: 3rem;
-  
   color: $sombre;
   position: relative;
   font-weight: bold;
-  
+  span{
+    cursor: pointer;
+
+  }
 }
 .lien::after{
   content: "";

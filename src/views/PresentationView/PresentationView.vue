@@ -52,7 +52,7 @@
         <p>285 millions de gélules</p>
         <p>160 t de comprimés pelliculés</p>
         <p>80 t de dragées</p>
-        <router-link to="/production"><span class="lien">La production AJC &rarr;</span></router-link>
+        <router-link  class="lien" to="/production"><span >La production AJC &rarr;</span></router-link>
       </div>
       <div class="card">
         <h2>Les domaines d'expertise</h2>
@@ -60,11 +60,11 @@
         <p>Le laboratoire d'analyse</p>
         <p>Le développement industriel</p>
         <p>La réactivité et la flexibilité</p>
-        <router-link to="/production"><span class="lien">Les services AJC &rarr;</span> </router-link>
+        <router-link class="lien" to="/production"><span >Les services AJC &rarr;</span> </router-link>
       </div>
     </div>
     </div>
-    <section class="container_adresse ">
+    <section class="container container_adresse ">
 
         <div class="content_adresse">
           <div class="texte">
@@ -95,7 +95,7 @@
             ></iframe>
           </div>
         </div>
-        <router-link class="lien"  to="/contact">Nous contacter &rarr; </router-link>
+        <router-link class="lien liens"  to="/contact"><span>Nous contacter &rarr;</span> </router-link>
 
     </section>
   
