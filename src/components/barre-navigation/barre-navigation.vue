@@ -30,7 +30,7 @@
       <li class="link-item-modal" @click="ouvrirMenu() ">
         <router-link to="/rejoignez-nous">Nous rejoindre</router-link>
       </li>
-      <li class="link-item-modal"><router-link to="/contact">Contact</router-link></li>
+      <li class="link-item-modal" @click="ouvrirMenu() "><router-link to="/contact">Contact</router-link></li>
     </ul>
   </div>
 </template>
