@@ -213,7 +213,21 @@
     }
   }
 
-  .formes_container {
+  .formes_container,
+  .machines_container,
+  .serialisation_container {  
+
+    .serialisation_content {
+      .datamatrix {
+        display: none;
+      }
+      .flex_container{
+        .texte{
+          padding: 1rem;
+        }
+      }
+    }
+
     padding: .5rem;
     h3 {
       font-size: 2.5rem;
@@ -228,4 +242,27 @@
       }
     }
   } 
+  .machines_container{
+    .machines_content{
+      .contenu{
+        margin: 0;
+        .sliders{
+          display: none;
+        }
+        .texte{
+          h4{
+            font-size: 1.2rem;
+          }
+          width: 80%;
+          flex-direction: column;
+          .texte_content{
+            width: 100%;
+            
+            margin: 1rem 0;
+          }
+        }
+        
+      }
+    }
+  }
 }
