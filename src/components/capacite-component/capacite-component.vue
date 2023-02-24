@@ -56,7 +56,7 @@ export default {
           texte: `comprimés pelliculés`,
         },
         {
-          chiffre: 60,
+          chiffre: 80,
           unite: `tonnes de`,
           texte: `comprimés dragéifiés`,
         },
