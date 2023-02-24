@@ -8,6 +8,9 @@
       </div>
       <ul class="links-container">
         <li class="link-item"><a href="/">Ajc Pharma</a></li>
+        <li class="link-item">
+          <router-link to="/presentation">A propos 2</router-link>
+        </li>
         <li class="link-item"><a href="/presentation">A Propos</a></li>
         <li class="link-item"><a href="/production">Production</a></li>
         <li class="link-item"><a href="/services">Services</a></li>
