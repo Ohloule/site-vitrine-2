@@ -11,11 +11,10 @@
         <li class="link-item">
           <router-link to="/presentation">A propos 2</router-link>
         </li>
-        <li class="link-item"><a href="/presentation">A Propos</a></li>
-        <li class="link-item"><a href="/production">Production</a></li>
-        <li class="link-item"><a href="/services">Services</a></li>
-        <li class="link-item"><a href="/rejoignez-nous">Nous rejoindre</a></li>
-        <li class="link-item"><a href="/contact">Contact</a></li>
+        <li class="link-item"><router-link to="/production">Production</router-link></li>
+        <li class="link-item"><router-link to="/services">Services</router-link></li>
+        <li class="link-item"><router-link to="/rejoignez-nous">Nous rejoindre</router-link></li>
+        <li class="link-item"><router-link to="/contact">Contact</router-link></li>
       </ul>
       <div @click="ouvrirMenu()" class="burger-menu-btn-container">
         <div class="burger-menu-btn"></div>
@@ -24,14 +23,14 @@
   </nav>
   <div class="modal">
     <ul class="links-container-modal">
-      <li class="link-item-modal"><a href="/">Accueil</a></li>
-      <li class="link-item-modal"><a href="/presentation">A Propos</a></li>
-      <li class="link-item-modal"><a href="/production">Production</a></li>
-      <li class="link-item-modal"><a href="/services">Services</a></li>
+      <li class="link-item-modal"><router-link to="/">Accueil</router-link></li>
+      <li class="link-item-modal"><router-link to="/presentation">A Propos</router-link></li>
+      <li class="link-item-modal"><router-link to="/production">Production</router-link></li>
+      <li class="link-item-modal"><router-link to="/services">Services</router-link></li>
       <li class="link-item-modal">
-        <a href="/rejoignez-nous">Nous rejoindre</a>
+        <router-link to="/rejoignez-nous">Nous rejoindre</router-link>
       </li>
-      <li class="link-item-modal"><a href="/contact">Contact</a></li>
+      <li class="link-item-modal"><router-link to="/contact">Contact</router-link></li>
     </ul>
   </div>
 </template>
