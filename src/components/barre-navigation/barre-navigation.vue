@@ -9,7 +9,7 @@
       <ul class="links-container">
         <li class="link-item"><a href="/">Ajc Pharma</a></li>
         <li class="link-item">
-          <router-link to="/presentation">A propos 2</router-link>
+          <router-link to="/presentation">A propos</router-link>
         </li>
         <li class="link-item"><router-link to="/production">Production</router-link></li>
         <li class="link-item"><router-link to="/services">Services</router-link></li>
