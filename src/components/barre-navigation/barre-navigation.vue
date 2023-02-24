@@ -23,11 +23,11 @@
   </nav>
   <div class="modal">
     <ul class="links-container-modal">
-      <li class="link-item-modal"><router-link to="/">Accueil</router-link></li>
-      <li class="link-item-modal"><router-link to="/presentation">A Propos</router-link></li>
-      <li class="link-item-modal"><router-link to="/production">Production</router-link></li>
-      <li class="link-item-modal"><router-link to="/services">Services</router-link></li>
-      <li class="link-item-modal">
+      <li class="link-item-modal" @click="ouvrirMenu() "><router-link to="/">Accueil</router-link></li>
+      <li class="link-item-modal" @click="ouvrirMenu() "><router-link to="/presentation">A Propos</router-link></li>
+      <li class="link-item-modal" @click="ouvrirMenu() "><router-link to="/production">Production</router-link></li>
+      <li class="link-item-modal" @click="ouvrirMenu() "><router-link to="/services">Services</router-link></li>
+      <li class="link-item-modal" @click="ouvrirMenu() ">
         <router-link to="/rejoignez-nous">Nous rejoindre</router-link>
       </li>
       <li class="link-item-modal"><router-link to="/contact">Contact</router-link></li>
