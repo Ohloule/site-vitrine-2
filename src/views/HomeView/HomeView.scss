@@ -44,7 +44,7 @@ p {
   text-align: justify;
 }
 
-.info-container a {
+.info-container .lien {
   align-self: flex-start;
   text-decoration: none;
   color: $sombre;
@@ -52,10 +52,10 @@ p {
   font-weight: bold;
 }
 
-.info-container a:hover::after {
+.info-container .lien:hover::after {
   transform: scaleX(1);
 }
-.info-container a::after {
+.info-container .lien::after {
   content: "";
   position: absolute;
   bottom: -2px;
