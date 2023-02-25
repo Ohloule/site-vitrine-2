@@ -177,7 +177,9 @@
   .ensemble_production {
     .container {
       padding: 2rem;
-
+      .content_image {
+        display: none;
+      }
       .content_texte {
         padding: 0;
         ul {
