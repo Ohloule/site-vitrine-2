@@ -33,6 +33,53 @@
   min-width: 12rem;
   height: 12rem;
 }
+.infos-bar {
+  background: $sombre;
+  padding: 1rem 2rem;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+li {
+  color: $clair;
+  opacity: 0.5;
+  font-size: 1rem;
+}
+li:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.mentionslegales {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  //background: rgba(255, 255, 255, 0.587);
+  background: $vert-clair-trans;
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  h3 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+  }
+  h4 {
+    font-size: 1.6rem;
+    margin: 1rem 0 1rem;
+  }
+  p {
+    font-size: 1.2rem;
+    text-align: justify;
+    width: clamp(350px, 30%, 800px);
+  }
+}
 
 @media screen and (max-width: 666px) {
   .logo {
