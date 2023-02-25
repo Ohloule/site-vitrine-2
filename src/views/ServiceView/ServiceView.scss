@@ -285,7 +285,12 @@ h1.pages {
   }
 }
 
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 900px) {
+  .pages,
+  #capacite,
+  #assurance,
+  .container1,
   .container-uparr {
     display: none;
   }

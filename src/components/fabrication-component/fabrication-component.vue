@@ -1,9 +1,7 @@
 <template>
   <div class="sp">
     <div class="sp_container">
-      <h2>
-        Les étapes de fabrication du laboratoire AJC Pharma
-      </h2>
+      <h2>Les étapes de fabrication du laboratoire AJC Pharma</h2>
       <!--   /////////////////La granulation /////////////////////////// -->
       <div class="ensemble_production">
         <div class="container">
@@ -25,7 +23,7 @@
             <ul class="list">
               <li class="item">4 mélangeurs granulateurs</li>
               <li class="item">
-                2 mélangeurs pour phase externe 600L et 2000L
+                3 mélangeurs pour phase externe 600L et 2000L
               </li>
               <li class="item">4 étuves</li>
             </ul>
@@ -54,9 +52,9 @@
             </p>
 
             <ul class="list">
-              <li class="item">2 machines Kilian</li>
-              <li class="item">4 Fette (P1200)</li>
-              <li class="item">3 géluleuses IMA PRACTICA</li>
+              <li class="item">2 FETTE P1200</li>
+              <li class="item">2 FETTE P1200i</li>
+              <li class="item">3 géluleuses IMA</li>
             </ul>
           </div>
           <div class="content content_image">

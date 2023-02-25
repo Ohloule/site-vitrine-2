@@ -96,6 +96,7 @@
         width: 60%;
         text-align: justify;
         display: flex;
+        justify-content: space-between;
         &_content {
           padding: 2rem;
           width: 40%;
@@ -205,7 +206,6 @@
 
 @media (max-width: 650px) {
   .container {
-    
     h2 {
       font-size: 3rem;
       text-align: center;
@@ -215,53 +215,60 @@
 
   .formes_container,
   .machines_container,
-  .serialisation_container {  
-
+  .serialisation_container {
     .serialisation_content {
       .datamatrix {
         display: none;
       }
-      .flex_container{
-        .texte{
+      .flex_container {
+        .texte {
           padding: 1rem;
         }
       }
     }
 
-    padding: .5rem;
+    padding: 0.5rem;
     h3 {
       font-size: 2.5rem;
       text-align: center;
       padding: 2rem 1rem;
     }
-    .card_container{
-      .card{
-        .texte{
-          transform: translateY(0%);
+
+    .formes_content {
+      .card_container {
+        .card {
+          margin: 0.5rem;
+          height: 10rem;
+          width: 10rem;
+          .texte {
+            transform: translateY(0%);
+            p {
+              font-size: 1rem;
+            }
+          }
         }
       }
     }
-  } 
-  .machines_container{
-    .machines_content{
-      .contenu{
+  }
+  .machines_container {
+    .machines_content {
+      .contenu {
         margin: 0;
-        .sliders{
+        .sliders {
           display: none;
         }
-        .texte{
-          h4{
+        .texte {
+          h4 {
             font-size: 1.2rem;
           }
           width: 80%;
           flex-direction: column;
-          .texte_content{
+          .texte_content {
             width: 100%;
-            
+
             margin: 1rem 0;
           }
         }
-        
       }
     }
   }
