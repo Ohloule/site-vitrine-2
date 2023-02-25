@@ -7,9 +7,9 @@
         /></a>
       </div>
       <ul class="links-container">
-        <li class="link-item"><a href="/">Ajc Pharma</a></li>
+        <li class="link-item"><a href="/">Accueil</a></li>
         <li class="link-item">
-          <router-link to="/presentation">A propos</router-link>
+          <router-link to="/presentation">Découvrir AJC</router-link>
         </li>
         <li class="link-item">
           <router-link to="/production">Production</router-link>
@@ -35,7 +35,7 @@
         <router-link to="/">Accueil</router-link>
       </li>
       <li class="link-item-modal" @click="ouvrirMenu()">
-        <router-link to="/presentation">A Propos</router-link>
+        <router-link to="/presentation">Découvrir AJC</router-link>
       </li>
       <li class="link-item-modal" @click="ouvrirMenu()">
         <router-link to="/production">Production</router-link>

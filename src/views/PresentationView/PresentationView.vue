@@ -62,7 +62,7 @@
         <p>Le laboratoire d'analyse</p>
         <p>Le développement industriel</p>
         <p>La réactivité et la flexibilité</p>
-        <router-link class="lien" to="/production"
+        <router-link class="lien" to="/services"
           ><span @click="remonte()">Les services AJC &rarr;</span>
         </router-link>
       </div>
@@ -98,7 +98,7 @@
       </div>
     </div>
     <router-link class="lien liens" to="/contact"
-      ><span>Nous contacter &rarr;</span>
+      ><span @click="remonte()">Nous contacter &rarr;</span>
     </router-link>
   </section>
 
