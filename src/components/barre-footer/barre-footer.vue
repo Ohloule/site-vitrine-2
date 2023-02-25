@@ -45,6 +45,7 @@
       des présentes mentions légales, par l’internaute, sa responsabilité civile
       et/ou pénale pourrai(en)t se voir engagée(s).
     </p>
+    <p class="fermeture">Cliquer pour fermer</p>
   </div>
   <div class="mentionslegales" @click="popupconfid()" v-if="confid">
     <h3>Utilisation des données personnelles collectées</h3>
@@ -66,6 +67,7 @@
       échanges de données sont cryptés. Notre site est hébergé chez
       PlanetHoster, vous pouvez consulter leurs CGV.
     </p>
+    <p class="fermeture">Cliquer pour fermer</p>
   </div>
 </template>
 

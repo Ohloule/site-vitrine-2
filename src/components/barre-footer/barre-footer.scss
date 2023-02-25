@@ -79,6 +79,14 @@ li:hover {
     text-align: justify;
     width: clamp(250px, 30%, 800px);
   }
+  .fermeture {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    font-style: italic;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 666px) {
