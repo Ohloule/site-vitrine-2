@@ -63,7 +63,7 @@
     <h3>Sécurité des données</h3>
     <p>
       Notre site bénéficie d’un certificat SSL fourni par o2switch, les échanges
-      de données sont cryptés. Notre site est hébergé chez planethoster, vous
+      de données sont cryptés. Notre site est hébergé chez PlanetHoster, vous
       pouvez consulter leurs CGV.
     </p>
   </div>
