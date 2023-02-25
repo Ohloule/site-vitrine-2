@@ -89,12 +89,12 @@ li:hover {
     flex-direction: column;
     height: auto;
   }
+  ul {
+    justify-content: space-evenly;
+  }
   .mentionslegales {
     h3 {
       width: clamp(250px, 30%, 800px);
-    }
-    ul {
-      justify-content: space-evenly;
     }
   }
   .coordonnees {
