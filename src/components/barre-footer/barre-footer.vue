@@ -84,15 +84,19 @@ export default {
     popupml() {
       if (this.ml) {
         this.ml = false;
+        document.body.style.overflow = "";
       } else {
         this.ml = true;
+        document.body.style.overflow = "hidden";
       }
     },
     popupconfid() {
       if (this.confid) {
         this.confid = false;
+        document.body.style.overflow = "";
       } else {
         this.confid = true;
+        document.body.style.overflow = "hidden";
       }
     },
   },
