@@ -44,17 +44,18 @@
     margin: 50px auto;
     min-height: 400px;
     display: flex;
+    align-items: center;
 
     .content {
       width: 50%;
     }
     .content_image {
       position: relative;
-      height: 400px;
+      min-height: 400px;
 
       .image {
         position: absolute;
-        height: 100%;
+        height: clamp(100px, 100%, 400px);
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
@@ -68,20 +69,11 @@
         &_aq {
           background-image: url(../../assets/aq.jpg);
         }
-        &_compression {
-          background-image: url(../../assets/compression.jpg);
-        }
-        &_pelliculage {
-          background-image: url(../../assets/pelliculage.jpg);
-        }
-        &_dragee {
-          background-image: url(../../assets/dragee_turbine.jpg);
-        }
       }
 
       .bordure {
         position: absolute;
-        height: 100%;
+        height: clamp(100px, 100%, 400px);
         width: 80%;
         border-radius: 2000px;
         border: 1px solid $vert-fonce;
@@ -94,10 +86,10 @@
       flex-direction: column;
       justify-content: center;
       padding: 40px;
+      width: 65%;
+      max-width: 600px;
       & > * {
-        width: 65%;
-        min-width: 470px;
-        max-width: 600px;
+        // min-width: 470px;
         line-height: 25px;
       }
       h3 {
@@ -108,7 +100,7 @@
         text-align: justify;
         margin-top: 20px;
       }
-      span.bold{
+      span.bold {
         font-weight: bold;
       }
 
@@ -173,27 +165,28 @@
     }
   }
 }
+
 @media (max-width: 650px) {
   .sous-parties {
-    h2{
-    font-size: 2.5rem;
-    margin: 1rem ;
-    text-align: center;
-  }
-  }
-  .ensemble_production{
-  .container{
-    padding: 2rem;
-    .content_image{
-      display: none;
+    h2 {
+      font-size: 2.5rem;
+      margin: 1rem;
+      text-align: center;
     }
-    .content_texte{
-      padding: 0;
-      ul{
-        width: 100%;
-        margin: 0;
+  }
+  .ensemble_production {
+    .container {
+      padding: 2rem;
+      .content_image {
+        display: none;
+      }
+      .content_texte {
+        padding: 0;
+        ul {
+          width: 100%;
+          margin: 0;
+        }
       }
     }
-  }
   }
 }

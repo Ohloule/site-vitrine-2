@@ -44,19 +44,18 @@
     margin: 50px auto;
     min-height: 400px;
     display: flex;
-    padding: 50px;
-    
+    align-items: center;
 
     .content {
       width: 50%;
     }
     .content_image {
       position: relative;
-      height: 400px;
+      min-height: 400px;
 
       .image {
         position: absolute;
-        height: 100%;
+        height: clamp(100px, 100%, 400px);
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
@@ -70,11 +69,10 @@
         &_cq {
           background-image: url(../../assets/cq.jpg);
         }
-
       }
 
       .bordure {
-        position: absolute;
+        height: clamp(100px, 100%, 400px);
         height: 100%;
         width: 80%;
         border-radius: 2000px;
@@ -102,22 +100,23 @@
         text-align: justify;
         margin-top: 20px;
       }
-      span.bold{
+      span.bold {
         font-weight: bold;
       }
 
       ul {
         position: relative;
         margin-top: 20px;
-        background-color: $vert-clair;
-
+        background-color: $vert-fonce;
         padding: 10px 40px;
         border-radius: 10px;
         transition: all 0.4s;
         box-shadow: 0 0 20px $vert-fonce-trans;
         line-height: 30px;
         li {
-          color: #000;
+          list-style: circle;
+
+          color: $blanc;
         }
       }
     }
@@ -168,28 +167,30 @@
   }
 }
 
-
 @media (max-width: 650px) {
   .sous-parties {
-    h2{
-    font-size: 2.5rem;
-    margin: 1rem ;
-    text-align: center;
-  }
-  }
-  .ensemble_production{
-  .container{
-    padding: 2rem;
-    .content_image{
-      display: none;
+    h2 {
+      font-size: 2.5rem;
+      margin: 1rem;
+      text-align: center;
     }
-    .content_texte{
-      padding: 0;
-      ul{
-        width: 100%;
-        margin: 0;
+  }
+  .ensemble_production {
+    .container {
+      padding: 2rem;
+      .content_image {
+        display: none;
+      }
+      .content_texte {
+        padding: 0;
+        ul {
+          width: 100%;
+          margin: 0;
+          li {
+            padding: 1rem;
+          }
+        }
       }
     }
-  }
   }
 }

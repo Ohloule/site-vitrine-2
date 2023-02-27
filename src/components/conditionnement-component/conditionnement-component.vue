@@ -92,6 +92,13 @@
                 Médicaments (EMVO) par l’intermédiaire d’une plate-forme
                 internationale.
               </p>
+              <p>
+                <router-link class="liens" to="/services"
+                  ><span @click="remonte()" class="lien"
+                    >Les services AJC Pharma &rarr;</span
+                  ></router-link
+                >
+              </p>
             </div>
             <div class="datamatrix"></div>
           </div>
@@ -104,6 +111,11 @@
 <script>
 export default {
   name: "conditionnement-component",
+  methods: {
+    remonte() {
+      window.scrollTo(0, 0);
+    },
+  },
 };
 </script>
 

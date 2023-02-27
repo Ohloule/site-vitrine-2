@@ -52,7 +52,9 @@
         <p>285 millions de gélules</p>
         <p>160 t de comprimés pelliculés</p>
         <p>80 t de dragées</p>
-        <router-link  class="lien" to="/production"><span >La production AJC &rarr;</span></router-link>
+        <router-link class="lien" to="/production"
+          ><span @click="remonte()">La production AJC &rarr;</span></router-link
+        >
       </div>
       <div class="card">
         <h2>Les domaines d'expertise</h2>
@@ -60,45 +62,45 @@
         <p>Le laboratoire d'analyse</p>
         <p>Le développement industriel</p>
         <p>La réactivité et la flexibilité</p>
-        <router-link class="lien" to="/production"><span >Les services AJC &rarr;</span> </router-link>
+        <router-link class="lien" to="/services"
+          ><span @click="remonte()">Les services AJC &rarr;</span>
+        </router-link>
       </div>
     </div>
+  </div>
+  <section class="container container_adresse">
+    <div class="content_adresse">
+      <div class="texte">
+        <h2>Nous trouver</h2>
+        <h3>Notre site de fabrication</h3>
+        <p>
+          Le laboratoire AJC Pharma se situe au coeur de la région Charentaise,
+          dans le bassin d'Angoulême, à Chateauneuf sur Charente.
+        </p>
+        <p>
+          La situation géographique, au coeur de l'axe Paris-Bordeaux, nous
+          permet une flexibilité pour l'approvisionnement et la livraison des
+          produits.
+        </p>
+        <h3>Notre siège social</h3>
+        <p>
+          Le siège social est basé à Paris dans le 17ème arrondissement, 16 rue
+          Brey.
+        </p>
+      </div>
+      <div class="carte">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5747.361498724798!2d-0.06659685542718519!3d45.5931046456202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48007e1e7e08ad7f%3A0x5263bcf33b6cb1a8!2sAJC%20PHARMA!5e0!3m2!1sfr!2sfr!4v1649940502612!5m2!1sfr!2sfr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
-    <section class="container container_adresse ">
-
-        <div class="content_adresse">
-          <div class="texte">
-            <h2>Nous trouver</h2>
-            <h3>Notre site de fabrication</h3>
-            <p>
-              Le laboratoire AJC Pharma se situe au coeur de la région
-              Charentaise, dans le bassin d'Angoulême, à Chateauneuf sur Charente.
-            </p>
-            <p>
-              La situation géographique, au coeur de l'axe Paris-Bordeaux, nous
-              permet une flexibilité pour l'approvisionnement et la livraison des
-              produits.
-            </p>
-            <h3>Notre siège social</h3>
-            <p>
-              Le siège social est basé à Paris dans le 17ème arrondissement, 16
-              rue Brey.
-            </p>
-          
-          </div>
-          <div class="carte">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5747.361498724798!2d-0.06659685542718519!3d45.5931046456202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48007e1e7e08ad7f%3A0x5263bcf33b6cb1a8!2sAJC%20PHARMA!5e0!3m2!1sfr!2sfr!4v1649940502612!5m2!1sfr!2sfr"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <router-link class="lien liens"  to="/contact"><span>Nous contacter &rarr;</span> </router-link>
-
-    </section>
-  
+    <router-link class="lien liens" to="/contact"
+      ><span @click="remonte()">Nous contacter &rarr;</span>
+    </router-link>
+  </section>
 
   <!-- <div>
     <h1 class="pages">Découvrir le <br/> laboratoire AJC Pharma</h1>
@@ -220,6 +222,11 @@
 import userImage from "../../assets/user.svg";
 export default {
   name: "presentation-view",
+  methods: {
+    remonte() {
+      window.scrollTo(0, 0);
+    },
+  },
   data() {
     return {
       personnel: [

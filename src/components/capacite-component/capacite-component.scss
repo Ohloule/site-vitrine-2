@@ -67,7 +67,7 @@
         font-size: 3.5rem;
         font-weight: 200;
         padding: 2rem 7rem;
-        color: #0D6747;
+        color: #0d6747;
       }
       p {
         padding: 0 7rem 7rem 7rem;
@@ -80,10 +80,22 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .container {
+    .card {
+      width: 12rem;
+      height: 12rem;
+      margin: 2rem;
+      .numero {
+        font-size: 2rem;
+      }
+    }
+  }
+}
 @media (max-width: 650px) {
   .container {
-    .content{
-      h2{
+    .content {
+      h2 {
         font-size: 3rem;
         text-align: center;
       }
@@ -95,13 +107,12 @@
           text-align: center;
           padding: 2rem 1rem;
         }
-        p{
+        p {
           line-height: 2rem;
           padding: 0 2rem 2rem 2rem;
           text-align: justify;
-      
-
+        }
+      }
     }
-  }}} 
-
+  }
 }
