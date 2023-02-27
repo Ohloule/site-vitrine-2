@@ -1,5 +1,6 @@
+import { createRouter, createMemoryHistory } from "vue-router";
 //import { createRouter, createWebHistory } from "vue-router";
-import { createRouter } from "vue-router";
+
 import HomeView from "../views/HomeView/HomeView.vue";
 import PresentationView from "../views/PresentationView/PresentationView.vue";
 import ProductionView from "../views/ProductionView/ProductionView.vue";
@@ -50,7 +51,8 @@ const routes = [
 
 const router = createRouter({
   mode: 'history',
-//  history: createWebHistory(process.env.BASE_URL),
+  //history: createWebHistory(process.env.BASE_URL),
+  history: createMemoryHistory(),
   routes,
 });
 
