@@ -105,10 +105,13 @@ img {
 .content_adresse {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
 }
 
 .carte {
-  width: 70%;
+  width: clamp(200px, 50%, 800px);
 }
 iframe {
   width: 100%;

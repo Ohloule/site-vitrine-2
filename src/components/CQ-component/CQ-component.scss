@@ -72,6 +72,7 @@
       }
 
       .bordure {
+        position: absolute;
         height: clamp(100px, 100%, 400px);
         height: 100%;
         width: 80%;
