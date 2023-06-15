@@ -36,20 +36,28 @@
 .infos-bar {
   background: $sombre;
   padding: 1rem 2rem;
+  border-top: 1px solid #ffffff1c;
 }
 ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 2rem;
+  padding: 0 2rem;
+}
+li:first-child {
+  cursor: default;
+}
+li:first-child:hover {
+  opacity: 0.5;
 }
 li {
   color: $clair;
   opacity: 0.5;
   font-size: 1rem;
+  cursor: pointer;
 }
 li:hover {
-  cursor: pointer;
   opacity: 0.9;
 }
 
@@ -61,13 +69,15 @@ li:hover {
   width: 100%;
   height: 120vh;
   z-index: 10000;
-  background: $vert-clair-trans;
+  background: $sombre-opaq;
+  color: $blanc;
   backdrop-filter: blur(15px);
   display: flex;
   flex-direction: column;
   padding: 4rem;
   h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: $vert-clair;
     margin: 2rem 0 1rem;
   }
   h4 {
@@ -85,7 +95,7 @@ li:hover {
     font-size: 1.3rem;
     margin-top: 2rem;
     font-style: italic;
-    text-align: center;
+    text-align: right;
   }
   .fermeture:hover {
     opacity: 0.5;
@@ -102,6 +112,9 @@ li:hover {
   }
   ul {
     justify-content: space-evenly;
+  }
+  li:first-child {
+    display: none;
   }
   .mentionslegales {
     h3 {

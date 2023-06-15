@@ -42,6 +42,21 @@
 <script>
 export default {
   name: "capacite-component",
+  mounted() {
+    //const duration = 5000;
+
+    this.valeurs.forEach((element) => {
+      let targetNumber = element.chiffre;
+      element.chiffre = 0;
+      setInterval(() => {
+        if (element.chiffre < targetNumber) {
+          element.chiffre += Math.round(targetNumber / 45, 0);
+        } else if (element.chiffre > targetNumber) {
+          element.chiffre = targetNumber;
+        }
+      }, 50);
+    });
+  },
   data() {
     return {
       valeurs: [

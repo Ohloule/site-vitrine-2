@@ -18,6 +18,7 @@
   </footer>
   <div class="infos-bar">
     <ul>
+      <li>© {{ currentYear }} Laboratoire AJC Pharma. Tous droits réservés.</li>
       <li @click="popupml()">Mentions légales</li>
       <li @click="popupconfid()">Politique de confidentialité</li>
     </ul>
@@ -74,10 +75,16 @@
 <script>
 export default {
   name: "barre-footer",
+  mounted(){
+    const now = new Date();
+    this.currentYear = now.getFullYear()
+  },
+
   data() {
     return {
       ml: false,
       confid: false,
+      currentYear: ""
     };
   },
   methods: {
