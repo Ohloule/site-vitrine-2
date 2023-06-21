@@ -242,13 +242,17 @@
   .machines_container,
   .serialisation_container {
     margin: 1rem;
+    margin-top: 3rem;
     .serialisation_content {
+      h3 {
+        padding-bottom: 0;
+      }
       .datamatrix {
         display: none;
       }
       .flex_container {
         .texte {
-          padding: 1rem;
+          padding: 0 2rem 2rem 2rem;
         }
       }
     }

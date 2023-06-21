@@ -59,10 +59,12 @@
       </div>
     </div>
     <div @click="popup.visible = false" v-if="popup.visible" class="popup">
-      <div  class="container">
+      <div class="container">
         <div class="content">
-          <div @click="popup.visible = false" class="fermeture">x</div>
-          <h2>{{ popup.titre }}</h2>
+          <div class="titreEtFermeture">
+            <h2>{{ popup.titre }}</h2>
+            <div @click="popup.visible = false" class="fermeture"></div>
+          </div>
           <h3>Description</h3>
           <p class="popup_description">{{ popup.description }}</p>
           <h3>Horaire</h3>
@@ -92,11 +94,12 @@ export default {
   data() {
     return {
       popup: {
-        titre: "",
-        description: "",
-        salaire: "",
-        price: "",
-        visible: false,
+        titre: "Technicien de maintenance",
+        description:
+          "Sur nos ateliers de  Chateauneuf sur Charente, vous serez amené à : Assurer les opérations de maintenance correctives au quotidien Participer à la fabrication des produits dans les délais imposés par le planning hebdomadaire de production, dans le respect des procédures qualité et de la sécurité. Réalisation les opérations de maintenance de 1er niveau des équipements de fabrication Participer au maintien de partie documentaire (dossiers de lots, procédures) Nettoyage et entretien des équipements, matériel et locaux de fabrication",
+        horaire: "Journée ou posté (2 x 8)",
+        price: "Selon profil",
+        visible: true,
       },
       offres: [
         {
