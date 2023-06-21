@@ -40,6 +40,7 @@ export default {
   list-style: none;
   font-family: "Noto Sans", sans-serif;
   font-size: $font-normal;
+  //outline: 1px solid blue;
 }
 
 .app {
