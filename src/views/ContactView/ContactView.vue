@@ -102,7 +102,8 @@ export default {
       if (securite) {
         emailjs
           .sendForm(
-            "service_szj9mog",
+            //"service_szj9mog",
+            "service_8a6snpa",
             "template_vb4d7tw",
             this.$refs.form,
             "uVPqf9noHKhJG1KIw"

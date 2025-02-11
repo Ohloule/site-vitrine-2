@@ -114,6 +114,7 @@ img {
   z-index: 8;
   justify-content: flex-start;
   width: 100%;
+  overflow-y: hidden;
   align-items: center;
   transition: all 0.3s ease;
   transform: translateY(-100%);

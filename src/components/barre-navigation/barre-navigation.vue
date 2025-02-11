@@ -17,9 +17,9 @@
         <li class="link-item">
           <router-link to="/services">Services</router-link>
         </li>
-        <li class="link-item">
+<!--         <li class="link-item">
           <router-link to="/rejoignez-nous">Nous rejoindre</router-link>
-        </li>
+        </li> -->
         <li class="link-item">
           <router-link to="/contact">Contact</router-link>
         </li>
@@ -43,9 +43,9 @@
       <li class="link-item-modal" @click="ouvrirMenu()">
         <router-link to="/services">Services</router-link>
       </li>
-      <li class="link-item-modal" @click="ouvrirMenu()">
+<!--       <li class="link-item-modal" @click="ouvrirMenu()">
         <router-link to="/rejoignez-nous">Nous rejoindre</router-link>
-      </li>
+      </li> -->
       <li class="link-item-modal" @click="ouvrirMenu()">
         <router-link to="/contact">Contact</router-link>
       </li>

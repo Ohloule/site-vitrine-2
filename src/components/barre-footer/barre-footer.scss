@@ -4,7 +4,7 @@
   min-height: 18rem;
   background-color: $sombre;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   z-index: 3000;
 }
@@ -112,6 +112,7 @@ li:hover {
   .barre-footer {
     flex-direction: column;
     height: auto;
+    z-index: 1;
   }
   ul {
     justify-content: space-evenly;

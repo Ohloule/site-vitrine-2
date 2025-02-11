@@ -75,7 +75,7 @@
                 créer et appliquer des méthodes qui permettent de combattre la
                 contrefaçon.
               </p>
-              <p>
+              <p class="grand">
                 L’apparition des nouvelles technologies d’encodage comme les
                 codes à barres Data Matrix ou des codes plus sophistiqués
                 permettent une authentification du médicament tout au long de
@@ -84,7 +84,7 @@
                 méthode qui apparaît comme efficace dans la lutte contre la
                 contrefaçon.
               </p>
-              <p>
+              <p >
                 Le laboratoire AJC Pharma s'est adapté et nos systèmes utilisent
                 les standards GS1 pour l’identification des médicaments. Nous
                 assurons la transmission des numéros de série auprès de nos

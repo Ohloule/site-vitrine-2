@@ -43,6 +43,7 @@ img {
   flex-shrink: 1;
   padding: 3rem;
 }
+
 .texte h2 {
   font-weight: bold;
   font-size: 3rem;
@@ -101,6 +102,30 @@ img {
   transform: scaleX(1);
   opacity: 1;
 }
+.content-mixite{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+.mixite-text>p {
+  margin-bottom: 1.6rem;
+}
+.mixite-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.img-mixite{
+  width: 40%;
+  aspect-ratio: 1;
+  border-radius: 3rem;
+  box-shadow: 0 0 1rem $sombre;
+  margin-top: 2rem;
+  align-self: center;
+}
 
 .content_adresse {
   display: flex;
@@ -109,6 +134,7 @@ img {
   gap: 3rem;
   width: 100%;
 }
+
 
 .carte {
   width: clamp(200px, 50%, 800px);
@@ -189,4 +215,15 @@ iframe {
   .container-uparr {
     display: none;
   }
+
+  .content-mixite{
+    flex-direction: column;
+  }
+
+  .img-mixite{
+    width: 90%;
+
+ 
+  }
+
 }

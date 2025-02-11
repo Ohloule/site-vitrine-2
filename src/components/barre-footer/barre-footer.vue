@@ -6,13 +6,15 @@
         Usine de Fontaury<br />16120 Chateauneuf sur Charente
       </div>
       <div class="tel">+33 5 45 66 64 64</div>
-      <div class="type">Site de production</div>
+      <div class="type">Siège social et Usine</div>
     </div>
     <div class="coordonnees site_siège">
-      <div class="nom">Laboratoire AJC Pharma</div>
-      <div class="adress">16 rue Brey<br />75017 Paris</div>
-      <div class="tel">+33 1 58 05 09 30</div>
-      <div class="type">Siège social</div>
+      
+      <div class="adress">Mail : usine@ajcpharma.com</div>
+      <div class="adress">Livraison/Réception : 8h-16h</div>
+      <div class="adress">Secrétariat : 8h30-17h30</div>
+      <div class="tel">Astreinte : 06 95 16 17 74</div>
+      <div class="type">Contact et Horaires</div>
     </div>
     <router-link to="/" class="logo"></router-link>
   </footer>
@@ -29,8 +31,9 @@
     <p>Usine de Fontaury, 16120 Chateauneuf sur Charente</p>
     <p>S.A.S au capital de 600 000€</p>
     <h3>Hébergement</h3>
-    <p>PlanetHoster</p>
-    <p>4416 Louis-B.-Mayer Laval, Québec Canada H7P 0G1</p>
+    <p>Hostinger</p>
+    <p>Siège social est situé HOSTINGER INTERNATIONAL LTD, 61 Lordou Vironos Street, 6023 Larnaca, Chypre, joignable par le moyen suivant : </p>
+    <p>https://www.hostinger.fr/contact</p>
     <h3>Développement</h3>
     <p>Louis-Manuel LAYANI</p>
     <h3>Propriété intellectuelle</h3>
@@ -66,7 +69,7 @@
     <p>
       Notre site bénéficie d’un certificat SSL fourni par PlanetHoster, les
       échanges de données sont cryptés. Notre site est hébergé chez
-      PlanetHoster, vous pouvez consulter leurs CGV.
+      Hostinger, vous pouvez consulter leurs CGV.
     </p>
     <p class="fermeture">Cliquer pour fermer</p>
   </div>
